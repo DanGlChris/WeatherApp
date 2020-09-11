@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>weather app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div class="main_class">
+        <header>
+            <input type="text" class="input_search"
+                autocomplete="on" placeholder="Enter a city's name here...">
+            <div class="search_button">Search</div>
+        </header>
+        <main>
+            <div class="stack">
+                <section class="result_location">
+                    <div class="result_dates">
+                        Thursday Sep 10 
+                    </div>
+                    <div class="result_city">Kinshasa, DRC</div>
+                </section> 
+                <div class="result_last">                
+                    <div class="result_temp">
+                        27<span>°C</span>
+                    </div>
+                    <div class="result_weather">Sunny</div>
+                    <div class="result_high_low">
+                        <div id="value_low">
+                            24°C
+                        </div> /
+                        <div id="value_high">
+                            30°C
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </main>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAKfzJsnEHD6XLIjWUUMiUyO9t_y_x4ITM",
+        authDomain: "weather-app-6c9be.firebaseapp.com",
+        databaseURL: "https://weather-app-6c9be.firebaseio.com",
+        projectId: "weather-app-6c9be",
+        storageBucket: "weather-app-6c9be.appspot.com",
+        messagingSenderId: "62540142738",
+        appId: "1:62540142738:web:679f9e3865fccaf2536e4b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

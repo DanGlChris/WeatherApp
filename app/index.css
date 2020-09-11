@@ -1,0 +1,102 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("src/Sunny\ weather.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.main_class{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: -10px -10px 0 -10px;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px 15px ;
+}
+header input{
+    clear: both;
+    width: 60%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px 0px 0px 15px;
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+header input:focus{
+    background-color: rgba(255, 255, 255);
+}
+.search_button{
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    padding-top: 8px;
+    width: 18%;
+    height: 27.2px;
+    min-width: 60px;
+    max-width: 85px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;;
+}
+.search_button:hover{
+    background-color: #555;
+}
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.stack{
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 12em;
+    height: 10em;
+    padding: 2em 2em 4em 2em;
+    border-radius: 25px;
+}
+.result_dates{
+    font-size: 14px;
+    color: #E04F13;
+    margin-bottom: 3px;   
+    display: inline-block;
+    vertical-align: middle;
+}
+.result_city{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+.result_last{
+    margin-top: 15px;
+}
+.result_temp{
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.result_weather{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.result_high_low div{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+}
+#value_high{
+    color: rgb(87, 180, 0);
+}
+#value_low{
+    color: rgba(255, 0, 0);
+}
